@@ -127,7 +127,7 @@ class Bruter(object):
 
            elif service == "instagram":
 
-               driver.get("https://instagram.com/" + username)
+               driver.get("https://instagram.com/" + hehexda_a)
 
                assert (("Sorry, this page isn't available.") not in driver.page_source)
 
@@ -178,7 +178,7 @@ class Bruter(object):
 
                     WebDriverWait(driver, 30).until(lambda d: d.execute_script('return document.readyState') == 'complete')
 
-                    elem = driver.find_element_by_name("username")
+                    elem = driver.find_element_by_name("hehexda_a")
 
                 elem.clear()
                 elem.send_keys(username)
